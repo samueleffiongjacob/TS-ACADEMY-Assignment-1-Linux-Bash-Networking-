@@ -101,3 +101,5 @@ echo "=============================================="
 
 log INFO "Finished system report for host $(get_hostname)"
 exit 0
+
+echo "ended =============================================="
