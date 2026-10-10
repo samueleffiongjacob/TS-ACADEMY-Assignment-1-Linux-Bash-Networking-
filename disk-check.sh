@@ -85,3 +85,5 @@ fi
 echo "Status    : OK - usage is below the threshold"
 log INFO "Path=$TARGET usage=${USAGE}% threshold=${THRESHOLD}% -> OK"
 exit 0
+
+echo "Disk check completed successfully."
