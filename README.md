@@ -1,4 +1,4 @@
-# Assignment 1 — Linux, Bash & Networking Toolkit
+# Assignment 1 - Linux, Bash & Networking Toolkit
 
 A small set of Bash scripts that collect system information, check disk usage
 and run basic network checks. Every action is written to a log file.
@@ -31,18 +31,36 @@ chmod +x *.sh
 ## Usage
 
 ### system-info.sh
+
 ```bash
 ./system-info.sh
 ```
+
 Prints hostname, current user, date/time, OS, kernel, uptime, CPU, memory and
 the current working directory. All values are read at runtime.
 
 ### disk-check.sh
+
 ```bash
+# Valid: usage is below threshold -> prints usage, exit 0
 ./disk-check.sh <threshold> [path]
+./disk-check.sh 1; echo "exit=$?" # check "/" against 1 %
 ./disk-check.sh 80            # check "/" against 80 %
+./disk-check.sh 80 /home; echo "exit=$?"  # check /home against 80 %
 ./disk-check.sh 90 /home      # check /home against 90 %
+./disk-check.sh 99; echo "exit=$?" # check /home against 99 %
+
+# Invalid input -> all should exit 2
+./disk-check.sh; echo "exit=$?"            # no args
+./disk-check.sh 0; echo "exit=$?"          # below range
+./disk-check.sh 101; echo "exit=$?"        # above range
+./disk-check.sh abc; echo "exit=$?"        # not an integer
+./disk-check.sh 1.5; echo "exit=$?"        # not an integer
+./disk-check.sh -5; echo "exit=$?"         # negative
+./disk-check.sh 80 /no/such/path; echo "exit=$?"  # bad path
+./disk-check.sh 80 /home extra; echo "exit=$?"    # too many args
 ```
+
 | Exit code | Meaning                                              |
 |-----------|------------------------------------------------------|
 | 0         | usage is **below** the threshold                     |
@@ -50,11 +68,13 @@ the current working directory. All values are read at runtime.
 | 2         | invalid input (threshold not 1–100, unknown path, wrong argument count) |
 
 ### network-check.sh
+
 ```bash
 ./network-check.sh <hostname-or-ip> [port]
 ./network-check.sh localhost
 ./network-check.sh example.com 443
 ```
+
 Validates input, resolves the host, pings it once, lists network interfaces and
 (optionally) tests a TCP port (1–65535).
 
