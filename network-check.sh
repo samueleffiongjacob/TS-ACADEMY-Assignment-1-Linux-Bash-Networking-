@@ -129,7 +129,7 @@ elif timeout 5 ping -c 1 -W 2 "$HOST" >/dev/null 2>&1; then
 else
     echo "No ping reply from $HOST (host down, or ICMP blocked)"
     log WARN "Ping to $HOST failed"
-    STATUS=1
+    STATUS=./
 fi
 
 # ---- 4. Network interfaces --------------------------------------------------
@@ -173,3 +173,5 @@ else
 fi
 log INFO "Finished check for $HOST with status $STATUS"
 exit "$STATUS"
+
+echo "end of script"
