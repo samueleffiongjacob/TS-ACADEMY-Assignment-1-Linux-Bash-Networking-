@@ -105,3 +105,4 @@ echo "Passed: $PASS"
 echo "Failed: $FAIL"
 echo "======================================"
 [[ $FAIL -eq 0 ]]
+echo "Grading complete."

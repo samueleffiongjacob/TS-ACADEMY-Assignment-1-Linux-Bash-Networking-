@@ -49,7 +49,6 @@ the current working directory. All values are read at runtime.
 ./disk-check.sh 80 /home; echo "exit=$?"  # check /home against 80 %
 ./disk-check.sh 90 /home      # check /home against 90 %
 ./disk-check.sh 99; echo "exit=$?" # check /home against 99 %
-
 # Invalid input -> all should exit 2
 ./disk-check.sh; echo "exit=$?"            # no args
 ./disk-check.sh 0; echo "exit=$?"          # below range
