@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # Assignment 1 local grader.
-# NOTE: reconstructed from the assignment PDF (line-wrap artefacts repaired).
-# If the instructor supplied an original grade.sh file, use that one instead.
+# If the instructor supplied an original grade.sh file, this code would use that one instead.
 set -u
 PASS=0
 FAIL=0

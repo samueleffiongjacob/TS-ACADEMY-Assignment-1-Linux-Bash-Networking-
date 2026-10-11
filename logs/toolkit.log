@@ -1,0 +1,51 @@
+2026-10-10 09:53:21 [ERROR] [disk-check.sh] Invalid input: expected 1 or 2 arguments, got 0
+2026-10-10 09:57:05 [INFO] [disk-check.sh] Path=/ usage=5% threshold=99% -> OK
+2026-10-10 09:57:53 [WARN] [disk-check.sh] Path=/ usage=5% threshold=1% -> THRESHOLD REACHED
+2026-10-10 09:59:37 [ERROR] [disk-check.sh] Invalid input: path does not exist: /no/such/path
+2026-10-10 09:59:55 [ERROR] [disk-check.sh] Invalid input: expected 1 or 2 arguments, got 3
+2026-10-10 10:03:35 [WARN] [disk-check.sh] Path=/ usage=5% threshold=1% -> THRESHOLD REACHED
+2026-10-10 10:08:43 [INFO] [system-info.sh] Started system report
+2026-10-10 10:08:43 [INFO] [system-info.sh] Finished system report for host DESKTOP-2AVPSO3
+2026-10-10 10:11:06 [ERROR] [disk-check.sh] Invalid input: expected 1 or 2 arguments, got 0
+2026-10-10 10:11:29 [WARN] [disk-check.sh] Path=/ usage=5% threshold=1% -> THRESHOLD REACHED
+2026-10-10 10:17:14 [INFO] [network-check.sh] Started check: host=localhost port=none
+2026-10-10 10:17:14 [INFO] [network-check.sh] Resolved localhost -> 127.0.0.1
+2026-10-10 10:17:15 [INFO] [network-check.sh] Ping to localhost succeeded
+2026-10-10 10:17:15 [INFO] [network-check.sh] Finished check for localhost with status 0
+2026-10-10 10:17:49 [INFO] [network-check.sh] Started check: host=example.com port=443
+2026-10-10 10:17:49 [INFO] [network-check.sh] Resolved example.com -> 104.20.23.154
+2026-10-10 10:17:53 [INFO] [network-check.sh] Ping to example.com succeeded
+2026-10-10 10:17:54 [INFO] [network-check.sh] TCP example.com:443 open
+2026-10-10 10:17:54 [INFO] [network-check.sh] Finished check for example.com with status 0
+2026-10-10 10:20:20 [INFO] [network-check.sh] Started check: host=samueleffion.tech port=none
+2026-10-10 10:20:20 [ERROR] [network-check.sh] Could not resolve samueleffion.tech
+2026-10-10 10:20:20 [INFO] [network-check.sh] Finished check for samueleffion.tech with status 1
+2026-10-10 10:54:39 [INFO] [system-info.sh] Started system report
+2026-10-10 10:54:39 [INFO] [system-info.sh] Finished system report for host DESKTOP-2AVPSO3
+2026-10-10 10:54:39 [ERROR] [disk-check.sh] Invalid input: threshold must be between 1 and 100 (got '0')
+2026-10-10 10:54:39 [ERROR] [disk-check.sh] Invalid input: threshold must be between 1 and 100 (got '101')
+2026-10-10 10:54:39 [ERROR] [disk-check.sh] Invalid input: threshold must be an integer from 1 to 100 (got 'abc')
+2026-10-10 10:54:39 [INFO] [disk-check.sh] Path=/ usage=5% threshold=100% -> OK
+2026-10-10 10:54:39 [ERROR] [network-check.sh] Invalid input: expected 1 or 2 arguments, got 0
+2026-10-10 10:54:39 [INFO] [network-check.sh] Started check: host=localhost port=none
+2026-10-10 10:54:39 [INFO] [network-check.sh] Resolved localhost -> 127.0.0.1
+2026-10-10 10:54:39 [INFO] [network-check.sh] Ping to localhost succeeded
+2026-10-10 10:54:39 [INFO] [network-check.sh] Finished check for localhost with status 0
+2026-10-10 10:54:39 [ERROR] [network-check.sh] Invalid input: port must be an integer from 1 to 65535 (got '0')
+2026-10-10 10:54:39 [ERROR] [network-check.sh] Invalid input: port must be an integer from 1 to 65535 (got '65536')
+2026-10-10 10:54:39 [ERROR] [network-check.sh] Invalid input: port must be an integer from 1 to 65535 (got 'abc')
+2026-10-10 10:56:02 [INFO] [system-info.sh] Started system report
+2026-10-10 10:56:02 [INFO] [system-info.sh] Finished system report for host DESKTOP-2AVPSO3
+2026-10-10 10:56:02 [ERROR] [disk-check.sh] Invalid input: threshold must be between 1 and 100 (got '0')
+2026-10-10 10:56:02 [ERROR] [disk-check.sh] Invalid input: threshold must be between 1 and 100 (got '101')
+2026-10-10 10:56:02 [ERROR] [disk-check.sh] Invalid input: threshold must be an integer from 1 to 100 (got 'abc')
+2026-10-10 10:56:02 [INFO] [disk-check.sh] Path=/ usage=5% threshold=100% -> OK
+2026-10-10 10:56:02 [ERROR] [network-check.sh] Invalid input: expected 1 or 2 arguments, got 0
+2026-10-10 10:56:02 [INFO] [network-check.sh] Started check: host=localhost port=none
+2026-10-10 10:56:02 [INFO] [network-check.sh] Resolved localhost -> 127.0.0.1
+2026-10-10 10:56:02 [INFO] [network-check.sh] Ping to localhost succeeded
+2026-10-10 10:56:02 [INFO] [network-check.sh] Finished check for localhost with status 0
+2026-10-10 10:56:02 [ERROR] [network-check.sh] Invalid input: port must be an integer from 1 to 65535 (got '0')
+2026-10-10 10:56:02 [ERROR] [network-check.sh] Invalid input: port must be an integer from 1 to 65535 (got '65536')
+2026-10-10 10:56:02 [ERROR] [network-check.sh] Invalid input: port must be an integer from 1 to 65535 (got 'abc')
+2026-10-10 11:02:54 [INFO] [disk-check.sh] Path=/ usage=5% threshold=99% -> OK
